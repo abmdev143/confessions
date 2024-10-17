@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Authenticatation</title>
-  </head>
-  <body>
-    <div class="modal-container">
-      <div class="modal">
-        <div class="modal__title">There is a message for you.</div>
-        <p class="modal__text">
-          Sorry for the trouble. This is a private message, so you have to type
-          the password. The password is your first name in small letters.
-        </p>
-        <input type="password" placeholder="Password" class="modal__input" />
-        <a href="#" class="modal__link modal__btn">Submit</a>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Authenticatation</title>
+</head>
+
+<body>
+  <div class="modal-container">
+    <div class="modal">
+      <h2 class="modal__title">There is a message for you.</h2>
+      <p class="modal__text">
+        Sorry for the trouble. This is a private message, so you have to type
+        the password. The password is your first name in small letters.
+      </p>
+      <input type="password" placeholder="Password" class="modal__input" />
+      <a href="#" class="modal__link modal__btn">Submit</a>
     </div>
-    <script>
-      const btnClose = document.querySelector(".modal__btn");
-      const modal = document.querySelector(".modal");
-      const modalLink = document.querySelector(".modal__link");
-      const inputEl = document.querySelector(".modal__input");
-      const authText = document.querySelector(".auth-page__text");
+  </div>
+  <script>
+    const btnClose = document.querySelector(".modal__btn");
+    const modal = document.querySelector(".modal");
+    const modalLink = document.querySelector(".modal__link");
+    const inputEl = document.querySelector(".modal__input");
+    const authText = document.querySelector(".auth-page__text");
 
-      btnClose.addEventListener("click", function () {
-        const ps = inputEl.value;
+    btnClose.addEventListener("click", function () {
+      const ps = inputEl.value;
 
-        if (ps === "shruti") {
-          modalLink.setAttribute("href", "https://dub.sh/ROTOwvZ");
-          inputEl.value = "";
-        } else {
-          alert("Wrong Password");
-          inputEl.value = "";
-        }
-      });
-    </script>
-  </body>
+      if (ps === "shruti") {
+        modalLink.setAttribute("href", "main.html");
+        inputEl.value = "";
+      } else {
+        alert("Wrong Password");
+        inputEl.value = "";
+      }
+    });
+  </script>
+</body>
+
 </html>
