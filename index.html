@@ -21,13 +21,13 @@
     </div>
   </div>
   <script>
-    const btnClose = document.querySelector(".modal__btn");
+    const btnSubmit = document.querySelector(".modal__btn");
     const modal = document.querySelector(".modal");
     const modalLink = document.querySelector(".modal__link");
     const inputEl = document.querySelector(".modal__input");
-    const authText = document.querySelector(".auth-page__text");
 
-    btnClose.addEventListener("click", function () {
+
+    btnSubmit.addEventListener("click", function () {
       const ps = inputEl.value;
 
       if (ps === "shruti") {

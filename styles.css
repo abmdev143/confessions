@@ -1,13 +1,13 @@
-/* :root {
+:root {
   --primary-color: #ee6983;
   --secondary-color: #ffc4c4;
   --primary-dark-color: #850e35;
   --tertiary-color: #fff5e4;
   --text-dark-color: #333;
   --glow-color: #ffffff;
-  --gradient-color-primary: #180005;
-  --gradient-color-secondary: #ef88885b;
-} */
+  --gradient-color-primary: #27030a;
+  --gradient-color-secondary: #b8527463;
+}
 
 /* :root {
   --primary-color: #19c9e0;
@@ -20,7 +20,7 @@
   --gradient-color-secondary: #3096d694;
 } */
 
-:root {
+/* :root {
   --primary-color: #359ddd;
   --secondary-color: #aacde7;
   --primary-dark-color: #0375e0;
@@ -29,7 +29,7 @@
   --glow-color: #ffffff;
   --gradient-color-primary: #011227;
   --gradient-color-secondary: #1e84c47e;
-}
+} */
 
 *,
 ::after,
@@ -332,7 +332,7 @@
   }
 
   .modal__text {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: var(--text-dark-color);
     line-height: 1.2;
   }
@@ -351,11 +351,16 @@
     text-decoration: none;
     color: var(--tertiary-color);
     text-align: center;
+    font-size: 1.5rem;
   }
 
   .modal__input:focus {
     outline: none;
     border-bottom: 2px solid var(--primary-dark-color);
+  }
+
+  .modal__input::placeholder {
+    opacity: 0.7;
   }
 }
 
