@@ -49,6 +49,10 @@
     font-family: sans-serif;
   }
 
+  p {
+    line-height: 1.2;
+  }
+
   .btn-round {
     width: 5rem;
     height: 5rem;
@@ -100,7 +104,7 @@
   }
 
   .header__logo {
-    width: 6rem;
+    width: 10rem;
     height: 3rem;
   }
 
@@ -228,15 +232,13 @@
   }
 
   .btn-container {
-    margin: 0 auto;
     display: flex;
-    column-gap: 2rem;
-    justify-content: space-around;
-    padding: 0 1.7rem;
+    justify-content: space-between;
+    margin: 0 1.7rem;
   }
 
   .btn {
-    flex-basis: 20%;
+    flex-basis: 30%;
     text-align: center;
     text-decoration: none;
     color: var(--tertiary-color);
