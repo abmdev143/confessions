@@ -5,8 +5,8 @@
   --tertiary-color: #fff5e4;
   --text-dark-color: #333;
   --glow-color: #ffffff;
-  --gradient-color-primary: #27030a;
-  --gradient-color-secondary: #b8527463;
+  --gradient-color-primary: #ee6984af;
+  --gradient-color-secondary: #850e365e;
 }
 
 /* :root {
@@ -210,7 +210,7 @@
   }
 
   .box__text {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     padding: 1.7rem;
     padding-top: 0;
     color: var(--text-dark-color);
