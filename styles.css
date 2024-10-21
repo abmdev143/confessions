@@ -5,8 +5,8 @@
   --tertiary-color: #fff5e4;
   --text-dark-color: #333;
   --glow-color: #ffffff;
-  --gradient-color-primary: #ee6984af;
-  --gradient-color-secondary: #850e365e;
+  --gradient-color-primary: #850e369a;
+  --gradient-color-secondary: #ee698496;
 }
 
 /* :root {
@@ -17,7 +17,7 @@
   --text-dark-color: #333;
   --glow-color: #ffffff;
   --gradient-color-primary: #021922cb;
-  --gradient-color-secondary: #3096d694;
+  --gradient-color-secondary: #3096d6a2;
 } */
 
 /* :root {
@@ -27,7 +27,7 @@
   --tertiary-color: #f7fbfc;
   --text-dark-color: #333;
   --glow-color: #ffffff;
-  --gradient-color-primary: #011227;
+  --gradient-color-primary: #011227b4;
   --gradient-color-secondary: #1e84c47e;
 } */
 
@@ -73,9 +73,9 @@
 
   /* HEADER */
   .header {
-    background-image: radial-gradient(
-        var(--gradient-color-secondary),
-        var(--gradient-color-primary)
+    background-image: linear-gradient(
+        var(--gradient-color-secondary) 20%,
+        var(--gradient-color-primary) 80%
       ),
       url(./IMG-back.jpg);
     height: 100dvh;
