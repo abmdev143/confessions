@@ -6,18 +6,18 @@
   --text-dark-color: #333;
   --glow-color: #ffffff;
   --gradient-color-primary: #850e369a;
-  --gradient-color-secondary: #ee698496;
+  --gradient-color-secondary: #ee6984a8;
 }
 
 /* :root {
   --primary-color: #19c9e0;
   --secondary-color: #1c98ad;
-  --primary-dark-color: #0e6e8b;
+  --primary-dark-color: #035e7a;
   --tertiary-color: #f7fbfc;
   --text-dark-color: #333;
   --glow-color: #ffffff;
-  --gradient-color-primary: #021922cb;
-  --gradient-color-secondary: #3096d6a2;
+  --gradient-color-primary: #083d52a6;
+  --gradient-color-secondary: #3096d6b9;
 } */
 
 /* :root {
@@ -314,7 +314,7 @@
     background-color: rgba(255, 255, 255, 0.5);
     z-index: 100;
     width: 80%;
-    padding: 2.5rem;
+    padding: 2rem;
     border-radius: 1rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
     display: flex;
@@ -324,7 +324,7 @@
   }
 
   .modal_wide {
-    width: 85%;
+    width: 90%;
   }
 
   .modal__title {
