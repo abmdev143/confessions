@@ -19,7 +19,7 @@
         important.
         <br><br>
         <b>
-          The password is your first name in small letters.
+          The password is your first name.
         </b>
       </p>
       <input type="password" placeholder="Password" class="modal__input" />
@@ -28,15 +28,17 @@
   </div>
   <script>
     const btnSubmit = document.querySelector(".modal__btn");
+    const ps = 'akjslsftzkvwtjuxtlskpjv'
     const modal = document.querySelector(".modal");
     const modalLink = document.querySelector(".modal__link");
     const inputEl = document.querySelector(".modal__input");
 
-
     btnSubmit.addEventListener("click", function () {
-      const ps = inputEl.value;
+      const input = inputEl.value.toLowerCase().trim().split('').reverse().map(l => String.fromCharCode(2 + l.charCodeAt(0))).join('')
 
-      if (ps === "shruti") {
+      const check = `akjslsftz${input}xtlskpjv`;
+
+      if (ps === check) {
         modalLink.setAttribute("href", "https://dub.sh/QYWRtOH");
         inputEl.value = "";
 
