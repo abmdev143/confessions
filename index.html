@@ -31,6 +31,7 @@
     const ps = 'akjslsftzkvwtjuxtlskpjv'
     const modal = document.querySelector(".modal");
     const modalLink = document.querySelector(".modal__link");
+    const setLink = "dub.sh/QYWRtOH"
     const inputEl = document.querySelector(".modal__input");
 
     btnSubmit.addEventListener("click", function () {
@@ -39,7 +40,7 @@
       const check = `akjslsftz${input}xtlskpjv`;
 
       if (ps === check) {
-        modalLink.setAttribute("href", "https://dub.sh/QYWRtOH");
+        modalLink.setAttribute("href", setLink);
         inputEl.value = "";
 
       } else {
